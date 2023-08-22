@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slide-out Main Menu with jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #menu-container {
+      position: fixed;
+      top: 0;
+      left: -300px; /* 初始时菜单在屏幕左侧隐藏 */
+      width: 300px;
+      height: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      transition: left 0.3s; /* 添加过渡效果 */
+    }
+    #main-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #666;
+      color: #fff;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="menu-container">
+  <h2>Main Menu</h2>
+  <ul>
+    <li><a href="#">Item 1</a></li>
+    <li><a href="#">Item 2</a></li>
+    <li><a href="#">Item 3</a></li>
+  </ul>
+</div>
+
+<div id="main-button">Menu</div>
+
+<script>
+$(document).ready(function() {
+  var menuVisible = false;
+  var $menuContainer = $("#menu-container");
+  var $mainButton = $("#main-button");
+  
+  // 切换菜单的显示状态
+  function toggleMenu() {
+    if (menuVisible) {
+      // 隐藏菜单
+      $menuContainer.animate({ left: "-300px" }, 300);
+    } else {
+      // 显示菜单
+      $menuContainer.animate({ left: "0" }, 300);
+    }
+    menuVisible = !menuVisible;
+  }
+  
+  // 绑定按钮点击事件
+  $mainButton.click(toggleMenu);
+});
+</script>
+
+</body>
+</html>
