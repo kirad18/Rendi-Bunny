@@ -497,7 +497,6 @@ h4{
         flex-direction: column;
         flex-wrap: wrap ;
         width: 100%;
-      
      }
 
     img{
@@ -862,6 +861,13 @@ h4{
             box-shadow: 0 0 5px #6b6b6b;
     }
 
+    
+    .finder , .contact , .login , .faq {
+            font-size: 1.2em;
+            color: rgb(27, 27, 27);
+            text-align: center;    
+    }
+
     .about, .news, .member, .gallery{
             margin-bottom: 3%;
     }
@@ -874,23 +880,17 @@ h4{
             transform: translateY(-90%);
     }
 
-    .others{
+    .others, .others-sec{
             display: flex;
-            flex-wrap: wrap;
-            margin-top: 3%;
+            margin-top: 5%;
+            margin-left: 5%;
     }
 
     .finder, .contact, .login, .faq{
-            width: 48%;
+            width: 100%;
             box-shadow: 0 0 5px #6b6b6b;
     }
-
-    .finder a, .contact a, .login a, .faq a{
-            font-size: 1.5em;
-            color: rgb(27, 27, 27);
-            text-align: center;
-    }
-
+    
     .finder, .login{
             margin-right: 10px;
             box-sizing: border-box;
@@ -911,7 +911,7 @@ h4{
 
     .bottom-box{
             width: 100%;
-            height: 100%;
+            bottom: 0;
             background-color: #B30101;
     }
 
@@ -928,7 +928,6 @@ h4{
     .bottom-plaid{
             width: 100%;
             position: absolute;
-            bottom: -5%;
             background-color: #B30101;
     }
 
@@ -1025,14 +1024,12 @@ h4{
                 </div>
 
                 <div class="others">
-                    <div class="finder">
-                        <a href="gallery.html">FINDER</a></div>
-                        <div class="contact">
-                            <a href="gallery.html">CONTACT</a></div>
-                        <div class="login">
-                            <a href="gallery.html">LOGIN</a></div>
-                        <div class="faq">
-                            <a href="gallery.html">FAQ</a></div>
+                        <a class="finder" href="gallery.html">FINDER</a>
+                        <a class="contact" href="gallery.html">CONTACT</a>
+                </div>
+                <div class="others-sec">
+                        <a class="login" href="gallery.html">LOGIN</a>
+                        <a class="faq" href="gallery.html">FAQ</a>
                 </div>
 
                     </div>
