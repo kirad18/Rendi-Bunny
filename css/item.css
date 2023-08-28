@@ -99,13 +99,13 @@
 #menu-container {
   position: fixed;
   top: 0;
-  left: -500px; /* 初始时菜单在屏幕左侧隐藏 */
+  left: -500px; 
   width: 500px;
   height: 100%;
   background-color: #E5BC64;
   color: #fff;
   padding: 20px;
-  transition: left 0.3s; /* 添加过渡效果 */
+  transition: left 0.3s; 
 
 }
 #menu-button {
@@ -115,20 +115,19 @@
   color: #E4D7CA;
   padding: 10px 20px;
   cursor: pointer;
-  transition: opacity 0.3s; /* 添加过渡效果 */
+  transition: opacity 0.3s; 
 }
 #close-button {
   position: fixed;
   color: #fff;
   padding: 10px 20px;
   cursor: pointer;
-  display: none; /* 初始时隐藏关闭按钮 */
+  display: none; 
 }
 
 .desk-header{
   width: 100%;
   display: block;
-  /* padding: 10px 20px; */
   box-sizing: border-box;
   position: relative;
   margin-top: 80px;
@@ -138,8 +137,6 @@
 .desk-menu-title{
   margin: auto;
   width: 470px;
-  /* margin-top: 50px; */
-  /* margin-right: auto;  */
   background-size: contain;
 }
 
@@ -148,12 +145,11 @@
   vertical-align: middle;
 }
 
-
-
 .desk-menu-icon img{ 
     width: 100%;
     vertical-align: bottom;
 }
+
 .desk-menu-log-in{
   margin-right: 30px;
 }
@@ -522,4 +518,71 @@
   width: 100%;
   object-fit: cover;
 }
+
+
+@media (max-width: 767px){
+  .footer{
+    width: 98%;
+    display: block;
+    margin: auto;
+}
+
+.footer-main{
+    width: 98%;
+    position: relative;
+}
+
+.footer-left{
+    display: block;
+  
+    width: 98%;
+}
+
+.contact-text{
+    width: 80%;
+}
+
+#animated-image{
+    position: absolute;
+    left: 33%;
+    width: 40%;
+}
+
+.phone{
+    width: 70%;
+    left: -10%;
+    position: absolute
+
+}
+
+.footer-right{
+    width: 98%;
+    display: block;
+    text-align: center;
+    transform: translateY(65%);
+} 
+
+.scbcribe{
+    width: 90%;
+    margin: auto;
+}
+
+.scb-text{
+    font-size: 44px;
+}
+
+.scbcribe >p{
+    font-size: 24px;
+}
+
+.footer-bottom{
+    display: none;
+}
+
+.scbcribe input[type="submit"]{
+  font-size: 16px;
+}
+
+}
+
 

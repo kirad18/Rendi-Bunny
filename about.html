@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/item.css">
+
     <title>About Randi Bunny</title>
     <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
@@ -190,7 +191,6 @@ h1{
     left: 0;
     margin-bottom: 50px;
     background-color: #E5BC64;
-  
 }
 
 h2{
@@ -221,7 +221,7 @@ h2{
 
 .fourth-txt{
     position: relative;
-    transform: translate(300px);
+    transform: translateX(20%);
 }
 
 .fourth-txt >a{
@@ -237,7 +237,6 @@ h3{
 
 .plaid{
     width: 250px;
-    transform: translate(-1%, -80%);
 }
 
 .plaid img{
@@ -489,7 +488,6 @@ h4{
 
     html, body{ 
         overflow-x: hidden; 
-        
     } 
 
     .wrap{
@@ -508,19 +506,22 @@ h4{
 
     .btn {display: none;}
 
+    .pic, .plaid{ display: none;}
+
+    .membercard, .star-two{
+        display: none;
+    }
+
     .container{
         padding-top: 15%;
-        margin: auto;
-        
+        margin: auto;   
     }
 
     .title-box{
         width: 80%;
-
     }
 
     .title{width: 90%;}
-
 
     .about-box{
         width: 98%;
@@ -532,17 +533,13 @@ h4{
         margin-bottom: 5%;
     }
     
-    h1{
-        font-size: 2.5em;
+    h1, h2, h3, h4{
+        font-size: 44px;
         margin-bottom: 2%;
     }
 
     .content{
-        font-size: 12px;
-    }
-
-    .pic{
-       display: none;
+        font-size: 14px;
     }
 
     .sticker{
@@ -552,54 +549,6 @@ h4{
         margin-bottom: 5%;
     }
 
-    .sticker img{width: 100%;}
-
-    .rabbit{
-        width: 98%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5%;
-        position: relative;
-        background-color: #A33A3A;
-    }
-
-    .ren{
-        width: 30%;
-    }
-
-    .ren img{width: 100%;}
-
-    .dialoge{
-        width: 30%;
-        left: 7%;
-        display: block;
-        position: absolute;
-    }
-
-    .dialoge-text{
-        text-align: center;
-        position: absolute;
-        font-size: 1.2em;
-        font-family: 'Paytone One', sans-serif;
-        top: 10%;
-        left: 14%;
-    }
-
-    .int-first-box{
-        width: 100%;
-        height: 200px;
-        display: block;
-        /* background-color: #A33A3A; */
-    }
-
-    .about-me-box, .about-txt{
-       display: none;
-    }
-
-    .introduce-first{
-        display: block;
-        width: 95%; 
-    }
    
     .star-one{
         width: 10%;
@@ -613,349 +562,365 @@ h4{
     }
 
     .introduce-sec{
-        display: none;
+        width: 250px;
     }
 
-    .introduce-sec-title{
-        display: block;
-        margin: auto;
-    }
-  
-    .sec-txt, .brandintro, .other-txt, .membercard,
-    .star-two{
-        display: none;
-    }
-
-    .brand-intro{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1em;
-        line-height: 1.5;
-        font-family: 'Paytone One', sans-serif;
+    .sec-txt{
+        width: 75%;
+        position: absolute;
+        top: -10%;
+        left: -110%;
+        font-size: 16px;
         margin-top: 5%;
     }
-
-
-    .footer{
-        width: 100%;
-        display: block;
-        margin: auto;
-    }
-
-
-
-    .footer-main{
+  
+    .int-third-box{
         width: 98%;
-    }
-
-    .footer-left{
-        display: block;
-        position: absolute;
-        width: 98%;
-    }
-
-    .main-box{
-        width: 90%;
-        top: 10%;
-        position: absolute
-    }
-
-    .contacts-box{
-        width: 90%;
-    }
-
-    .contact-text{
-        font-size: 6em;
-        top: 4%;
-        left: 10%;
-        position: absolute
-    }
-
-    .phone{
-        width: 70%;
-        left: -10%;
-        position: absolute
-
-    }
-
-    .footer-right{
         display: block;
         text-align: center;
+        position: relative;
+    }
+
+    .third-txt{
+        width: 80%;
         position: absolute;
+        left: -60%;
+        top: -15%;
+        font-size: 16px;
+    }
+
+    .rabbit{
         width: 98%;
-        top: 40%;
-        left: -5%
-    } 
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+        position: absolute;
+        top: 65%;
+        right: -15%;
+    }
 
-    .scbcribe-box{
+    .ren{
+        width: 30%;
+    }
+
+
+    h2{
+        transform: translateY(40%);
+    }
+
+    .award-box{
+        width: 98%;
+        display: block;
+        text-align: center;
+        position: relative;
+        left: -10%;
+    }
+
+    h3{
+        transform: translateX(20%);
+    }
+
+    .fourth-txt{
+        width: 350%;
+        transform: translate(-23%, 5%);
+    }
+
+    .item-title{
+        font-size: 18px;
+    }
+
+    .item-txt{
+        font-size: 24px;
+    }
+
+    .team{
+        width: 98%;
+        display: block;
+        margin: auto;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .team-box{
+        display: block;
+        width: 98%;  
+        
+    }
+
+    .myself{
         width: 90%;
-
     }
 
-    .top-txt >h2{
-        font-size: 1.5em;
+    .team-txt{
+        width: 90%;
+        transform: translateX(5.5%);
+       
     }
 
-    .top-txt >h3{
-        font-style: .5em;
+    .name, .job, .works{
+        font-size: 24px;
+        transform: translateX(-28%);
+        border-bottom: none;
+       
     }
-
   
-    .footer-bottom{display: none;}
-
-    .text{
-        font-size: .3em;
+    .market{
+        width: 50px;
     }
-
+    
+    
+ 
+    /* side-menu */
     .main-header{
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
     }
-
+    
     .main-nav{
-            display: block;
-            position: absolute;
-            width: 100vw;
-            height: calc(100vh - 60px);
-            background-color: #E4D7CA;
-            top: 80%;
-            left: 0%;
-            translate: -100% 0%;
-            flex-direction: column;
-            opacity: 0;
-            transition: opacity 1s, translate 0s 1s;
-            z-index: 999;
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 60px);
+        background-color: #E4D7CA;
+        top: 80%;
+        left: 0%;
+        translate: -100% 0%;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 1s, translate 0s 1s;
+        z-index: 999;
     }
-
+    
     .main-nav a{
-            padding: 10px;
-            text-decoration: none;
-            color: rgb(27, 27, 27);
-            display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(27, 27, 27);
+        display: block;
     }
-
+    
     #menu-switch:checked + .main-header .main-nav{
-            translate: 0% 0%;
-            opacity: 1;
-            transition: opacity 1s;
+        translate: 0% 0%;
+        opacity: 1;
+        transition: opacity 1s;
     }
-        
+    
     .hb label{
-            width: 70px;
-            height: 40px;
-            /* background-color: #c8bdb2; */
-            display: block;
-            position: relative;
-            border-radius: 10px;
+        width: 70px;
+        height: 40px;
+        /* background-color: #c8bdb2; */
+        display: block;
+        position: relative;
+        border-radius: 10px;
     }
-        
+    
     .hb span{
-            width: 40%;
-            height: 2px;
-            background-color: #c24b4b;
-            position: absolute;
-            inset: 0;
-            margin: auto;
-            transition: transform 0.3s, opacity 0.3s;
+        width: 40%;
+        height: 2px;
+        background-color: #c24b4b;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        transition: transform 0.3s, opacity 0.3s;
     }
-
+    
     .hb span:nth-child(1){
-            translate: 0px -10px;
-            rotate: 0deg;
-            transition: translate 0.3s 0.3s,
-                        rotate 0.3s 0s;
+        translate: 0px -10px;
+        rotate: 0deg;
+        transition: translate 0.3s 0.3s,
+                    rotate 0.3s 0s;
     }
-
+    
     .hb span:nth-child(2){
-            opacity: 1;
-            transition: opacity 0.3s 0.6s;
+        opacity: 1;
+        transition: opacity 0.3s 0.6s;
     }
-
+    
     .hb span:nth-child(3){
-            translate: 0px 10px;
-            rotate: 0deg;
-            transition: translate 0.3s 0.3s,
-                        rotate 0.3s 0s;
+        translate: 0px 10px;
+        rotate: 0deg;
+        transition: translate 0.3s 0.3s,
+                    rotate 0.3s 0s;
     }
-
+    
     #menu-switch:checked + .main-header .hb span:nth-child(1){
-            translate: 0px 0px;
-            rotate: 45deg;
-            transition: translate 0.3s 0.3s,
-                        rotate 0.3s 0.6s;
+        translate: 0px 0px;
+        rotate: 45deg;
+        transition: translate 0.3s 0.3s,
+                    rotate 0.3s 0.6s;
     }
-
+    
     #menu-switch:checked + .main-header .hb span:nth-child(2){
-            opacity: 0;
-            transition: opacity 0.3s;
+        opacity: 0;
+        transition: opacity 0.3s;
     }
-
+    
     #menu-switch:checked + .main-header .hb span:nth-child(3){
-            translate: 0px 0px;
-            rotate: 315deg;
-            transition: translate 0.3s 0.3s,
-                        rotate 0.3s 0.6s;
+        translate: 0px 0px;
+        rotate: 315deg;
+        transition: translate 0.3s 0.3s,
+                    rotate 0.3s 0.6s;
     } 
     
     .menu-box{
         width: 100%;
         background-color: #B30101;
     }
-
+    
     .menu-title{
-            width: 80%;
-            text-align: center;
-            margin: auto;
-            padding-top: 1%;
-            background-color: #B30101;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        padding-top: 1%;
+        background-color: #B30101;
     }
-
-
-
+    
+    
+    
     .menu-title img{ width: 100%;}
-
+    
     .menu-outside{
-            width: 88%;
-            height: 70%;
-            border-radius: 10px;
-            padding: 10px;
-            margin: auto;
-            margin-bottom: 25px;
-            box-sizing: border-box;
+        width: 88%;
+        height: 70%;
+        border-radius: 10px;
+        padding: 10px;
+        margin: auto;
+        margin-bottom: 25px;
+        box-sizing: border-box;
     }
-
+    
     .menu-inside{
-            width: 90%;
-            height: 93%;
-            margin: auto;
+        width: 90%;
+        height: 93%;
+        margin: auto;
     }
-
+    
     .menu{
-            font-size: 2.5em;
-            height: 5%;
-            margin: auto;
-            color: rgb(27, 27, 27);
-            text-align: center;
-            padding-top: 1%;
-            font-family: 'Holtwood One SC', serif;
+        font-size: 2.5em;
+        height: 5%;
+        margin: auto;
+        color: rgb(27, 27, 27);
+        text-align: center;
+        padding-top: 1%;
+        font-family: 'Holtwood One SC', serif;
     }
-
+    
     .period{
-            font-size: 2em;
-            margin-bottom: 3%;
+        font-size: 2em;
+        margin-bottom: 3%;
     }
-
+    
     .about a, .news a, .member a, .gallery a, .product a{
-            font-size: 1.5em;
-            color: #B30101;
-            margin: auto;
-            padding: 10px 10px;
+        font-size: 1.5em;
+        color: #B30101;
+        margin: auto;
+        padding: 10px 10px;
     }
-
+    
     .about, .news, .member, .gallery, .product{
-            width: 100%;
-            height: 12%;
-            padding: 2px 10px;
-            box-sizing: border-box;
-            box-shadow: 0 0 5px #6b6b6b;
+        width: 100%;
+        height: 12%;
+        padding: 2px 10px;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px #6b6b6b;
     }
-
+    
     
     .finder , .contact , .login , .faq {
-            font-size: 1.2em;
-            color: rgb(27, 27, 27);
-            text-align: center;    
+        font-size: 1.2em;
+        color: rgb(27, 27, 27);
+        text-align: center;    
     }
-
+    
     .about, .news, .member, .gallery{
-            margin-bottom: 3%;
+        margin-bottom: 3%;
     }
-
+    
     .about-price, .news-price,  .member-price, 
     .gallery-price, .product-price{
-            display: flex;
-            justify-content: end;
-            /* position: absolute; */
-            transform: translateY(-90%);
-    }
-
-    .others, .others-sec{
-            display: flex;
-            margin-top: 5%;
-            margin-left: 5%;
-    }
-
-    .finder, .contact, .login, .faq{
-            width: 100%;
-            box-shadow: 0 0 5px #6b6b6b;
+        display: flex;
+        justify-content: end;
+        transform: translateY(-90%);
     }
     
-    .finder, .login{
-            margin-right: 10px;
-            box-sizing: border-box;
+    .others, .others-sec{
+        display: flex;
+        margin-top: 5%;
+        margin-left: 3%;
     }
-
-    .finder, .contact{
-            margin-bottom: 10px;
-            box-sizing: border-box;
+    
+    .mobile-finder, .mobile-contact, .mobile-login, .mobile-faq{
+        width: 100%;
+        box-shadow: 0 0 5px #6b6b6b;
     }
-
+    
+    .mobile-finder, .mobile--login{
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+    
+    .mobile-finder, .mobile-contact{
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    
     .top-plaid{
-            width: 100%;
-            background-color: #B30101;
+        width: 100%;
+        background-color: #B30101;
     }
-
+    
     .top-plaid img{width: 100%;}
-
-
+    
+    
     .bottom-box{
-            width: 100%;
-            bottom: 0;
-            background-color: #B30101;
+        width: 100%;
+        bottom: 0;
+        background-color: #B30101;
     }
-
+    
     .top-icon{
-            width: 30%;
-            display: flex;
-            margin: auto;
-            background-color: #B30101;
+        width: 30%;
+        display: flex;
+        margin: auto;
+        background-color: #B30101;
     }
-
+    
     .top-icon img{width: 100%;}
-
+    
     
     .bottom-plaid{
-            width: 100%;
-            position: absolute;
-            background-color: #B30101;
+        width: 100%;
+        position: absolute;
+        background-color: #B30101;
     }
-
+    
     .bottom-plaid img{width: 100%;} 
-
+    
     .about:active, .news:active, .member:active,
     .gallery:active, .product:active{
-            transform: translate(0px,5px);
-            -webkit-transform: translate(0px,5px);
-	        background-color: #B30101;
+        transform: translate(0px,5px);
+        -webkit-transform: translate(0px,5px);
+        background-color: #B30101;
     }
-
+    
     .about a:active, .news a:active, .member a:active,
     .gallery a:active, .product a:active, .content:active{
-            color: #E4D7CA;
+        color: #E4D7CA;
     }
-
-    .finder:active, .contact:active, .login:active, .faq:active{
-        background-color: rgb(27, 27, 27);
+    
+    .mobile-finder:active, .mobile-contact:active, .mobile-login:active, 
+    .mobile-faq:active{
+    background-color: rgb(27, 27, 27);
     }
-
-    .finder a:active, .contact a:active, .login a:active, .faq a:active{
-            color: #E4D7CA;
+    
+    .mobile-finder a:active, .mobile-ontact a:active, 
+    .mobile-login a:active, .mobile-faq a:active{
+        color: #E4D7CA;
     }
-
+    
     .animate{
-	        transition: all 0.5s;
-	        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
     }
 
 
@@ -985,9 +950,7 @@ h4{
         </div>
 
         <nav class="main-nav">
-            <div class="top-plaid">
-                <img src="image/red plaid.svg" alt="plaid">
-            </div> 
+                <img class="top-plaid" src="image/red plaid.svg" alt="plaid">
             <div class="menu-box">
             <div class="menu-title">
                 <a href="guide-page.html" >
@@ -1024,12 +987,12 @@ h4{
                 </div>
 
                 <div class="others">
-                        <a class="finder" href="gallery.html">FINDER</a>
-                        <a class="contact" href="gallery.html">CONTACT</a>
+                        <a class="mobile-finder" href="gallery.html">FINDER</a>
+                        <a class="mobile-contact" href="gallery.html">CONTACT</a>
                 </div>
                 <div class="others-sec">
-                        <a class="login" href="gallery.html">LOGIN</a>
-                        <a class="faq" href="gallery.html">FAQ</a>
+                        <a class="mobile-login" href="gallery.html">LOGIN</a>
+                        <a class="mobile-faq" href="gallery.html">FAQ</a>
                 </div>
 
                     </div>
@@ -1038,20 +1001,15 @@ h4{
             <div class="bottom-box">
 
                 <div class="top-icon">
-                    <div class="log-in">
+                    <div class="mobile-log-in">
                         <a href="menu.html" ><img src="image/log-in_mobile_menu.svg" alt="登入"></a></div>
-                    <div class="cart">
+                    <div class="mobile-cart">
                         <a href="menu.html" ><img src="image/cart_mobile_menu.svg" alt="購物車"></a></div>
                 </div>  
                 <div class="bottom-plaid">
                     <img src="image/red plaid.svg" alt="plaid">
             </div>
-               
-                 
-
-            </div>
-
-              
+            </div>             
         </nav>
 
 
@@ -1145,15 +1103,9 @@ h4{
                 <a href="#" class="close-btn-txt">CLOSE</a></div>
         </div>
 
-
-
-
-
     </header>
 
     
-
-
     <div class="container">
 
         <div class="title-box">
@@ -1179,23 +1131,10 @@ h4{
                                 <img src="image/about_product.svg" alt="sticker"></a></div> 
             </div>
 
-           
-
-                <div class="rabbit">
-                    <div class="ren">
-                        <img src="image/ren_blink.gif" alt="gif"></div> 
-                    <div class="dialoge">
-                        <img src="image/dialogbox.svg" alt="dialog"></div>
-                        <div class="dialoge-text">CHECK<br>IT!</div>
-
-                </div>
-
-                
-
 
                 <div class="int-sec-box">
               
-                    <img  class="introduce-sec" src="image/about-sec-title.svg" alt="intro-sec">
+                    <img class="introduce-sec" src="image/about-sec-title.svg" alt="intro-sec">
            
                     <div class="sec-txt">
                             I have enjoyed drawing since I was a child.
@@ -1218,13 +1157,17 @@ h4{
                         <a href="#">ABC Parts</a> and <a href="#">NTF</a>
                          collections.
                     </div>
+                            
+                <div class="rabbit">
+                        <img class="ren"  src="image/ren_blink.gif" alt="gif"></div> 
+
 
                 </div>
 
 
                 <div class="award-box">
                     <h3>AWARD
-                    <img class="plaid" src="image/plaid3.svg" alt="plaid"></h3>
+                    <img class="plaid" src="image/plaid3.svg" alt="plaid">   </h3>
                     <div class="fourth-txt">
                         <a href="#"><div class="item1">
                            <div class="item-title">■ OPENSEA</div>
@@ -1292,16 +1235,6 @@ h4{
                     </div>
                 </div>
               
-<!-- 
-        <div class="int-first-box">
-            <div class="about-me-box">
-                <div class="about-txt"> INTRODUCE MYSELF</div> </div>
-            <div class="introduce-first">
-              <img src="image/about-introduce-first.svg" alt="intro"></div>
-              
-                
-           
-        </div>     -->
       
         <div class="star-one">
             <img src="image/about-start.svg" alt="star"></div>  
@@ -1358,9 +1291,9 @@ h4{
 
         <div class="footer-bottom">
             <div class="bottom-text">
-                <a href="about.html">PAYMENT&SHIPPING</a>
-                <a href="about.html">CONTACT</a>
-                <a href="about.html">FAQ</a>
+                <a class= bottom-payment" href="about.html">PAYMENT&SHIPPING</a>
+                <a class="bottom-contact" href="about.html">CONTACT</a>
+                <a class="faq "href="about.html">FAQ</a>
                     <div class="icon">
                         <a class="fb "href="about.html"><img src="image/facebook icon.svg" alt="fb"></a>
                         <a class="ig "href="about.html"><img src="image/instagram icon.svg" alt="ig"></a>
