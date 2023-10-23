@@ -106,6 +106,7 @@
   color: #fff;
   padding: 20px;
   transition: left 0.3s; 
+  z-index: 999;
 
 }
 #menu-button {
@@ -248,9 +249,9 @@
 
 .bottom-box{
   width: 95px;
-  background-color: rgb(27, 27, 27);
+  /* background-color: rgb(27, 27, 27); */
   border-radius: 10px;
-  padding: 15px 0;
+  padding: 5px 0;
 } 
 
 .txt{
@@ -478,11 +479,16 @@
   color: #c6766d;
   background-color: #f5e2b1;
   border-radius: 20px;
+  cursor:pointer;
 }
 
-.scbcribe input[type="submit"]:active{
+.scbcribe input[type="submit"]:active, .scbcribe input[type="submit"]:hover{
   color: #A33A3A;
   background-color: #edc257;
+}
+
+input[type="text"]{
+  width: 100%;
 }
 
 .footer-bottom{
@@ -539,7 +545,7 @@
 }
 
 .contact-text{
-    width: 80%;
+    width: 98%;
 }
 
 #animated-image{
@@ -568,7 +574,7 @@
 }
 
 .scb-text{
-    font-size: 44px;
+    font-size: 24px;
 }
 
 .scbcribe >p{
@@ -582,6 +588,7 @@
 .scbcribe input[type="submit"]{
   font-size: 16px;
 }
+
 
 }
 
