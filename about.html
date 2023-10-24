@@ -17,7 +17,6 @@
 
 <!-- rwd手機menu切換 -->
     <input type="checkbox" name="" id="menu-switch"> 
-
     <header class="main-header">
           
         <div class="hb">
@@ -392,7 +391,7 @@
 <script src="./js/jquery-3.7.0.js"></script>
 
 
-    <script>
+<script>
     //side-menu
     $(document).ready(function() {
       var menuVisible = false;
@@ -400,7 +399,7 @@
       var $menuButton = $("#menu-button");
       var $closeButton = $("#close-button");
       
-      // 切换菜单的显示状态
+      // 切换菜單
       function toggleMenu() {
         if (menuVisible) {
           // 隐藏菜单，显示原按钮
@@ -409,7 +408,7 @@
             $closeButton.hide();
           });
         } else {
-          // 隐藏原按钮，显示关闭按钮，显示菜单
+          // 隐藏原按钮，顯示關閉按钮，顯示menu
           $menuButton.hide();
           $closeButton.show();
           $menuContainer.animate({ left: "0" }, 300);
@@ -417,87 +416,62 @@
         menuVisible = !menuVisible;
       }
       
-      // 绑定按钮点击事件
+      // 绑定按钮點擊事件
       $menuButton.click(toggleMenu);
       $closeButton.click(toggleMenu);
       
-      // 设置关闭按钮位置为原按钮位置
+      // 設置關閉按钮位置為原按钮位置
       $closeButton.css({
         top: $menuButton.position().top,
         left: $menuButton.position().left
       });
     });
 
+     //按鈕會跟著移動
+     $(document).ready(function() {
 
-    </script>
+    var $sticker = $(".desk-sticker");
 
-    <script>
-    //按鈕會跟著移動
+    //hover
+    $(".button-about, .button-news, .button-member, .button-gallery, .button-product").hover(function() {
 
-    $(document).ready(function() {
-
-      var $sticker = $(".desk-sticker");
-
-        //hover
-      $(".button-about, .button-news, .button-member, .button-gallery, .button-product").hover(function() {
-
-        var buttonId = $(this).data("button-id");
-
-
-        var buttonRect = $(this)[0].getBoundingClientRect();
-
-
-        var stickerY = buttonRect.top -155; 
-
-
-        $sticker.animate({ top: stickerY + "px" }, 100);
-      });
-
-
-      //on click
-      $(".button-about, .button-news, .button-member, .button-gallery, .button-product").click(function() {
-
-        var buttonId = $(this).data("button-id");
-
-
-        var buttonRect = $(this)[0].getBoundingClientRect();
-
-
-        var stickerY = buttonRect.top -155;  
-
-        $sticker.animate({ top: stickerY + "px" }, 50);
-      });
+    var buttonId = $(this).data("button-id");
+    var buttonRect = $(this)[0].getBoundingClientRect();
+    var stickerY = buttonRect.top -155; 
+    $sticker.animate({ top: stickerY + "px" }, 100);
     });
-  </script>
 
 
+    //on click
+    $(".button-about, .button-news, .button-member, .button-gallery, .button-product").click(function() {
 
-    <script>
+    var buttonId = $(this).data("button-id");
+    var buttonRect = $(this)[0].getBoundingClientRect();
+    var stickerY = buttonRect.top -155;  
+
+    $sticker.animate({ top: stickerY + "px" }, 50);
+    });
+});
 
     //FOOTER
-
     $(document).ready(function() {
-  
-      var $image = $("#animated-image");
-      
-      function bounceImage() {
+    
+    var $image = $("#animated-image");
+    
+    function bounceImage() {
         $image.animate({
-          top: "+=20px" 
+        top: "+=20px" 
         }, 500, "linear", function() {
-          $image.animate({
+        $image.animate({
             top: "-=20px"
-          }, 500, "linear", bounceImage); 
+        }, 500, "linear", bounceImage); 
         });
-      }
-      
-      bounceImage();
+    }
+    
+    bounceImage();
     });
-    </script>
 
-
-
-
-
+</script>
 
 
 
