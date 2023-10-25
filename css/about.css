@@ -14,6 +14,32 @@ body {
     font-family: 'Paytone One', sans-serif;
 }
 
+/* 轉場動畫 */
+.carrot-container {
+    position: absolute;
+    width: 50px;
+    height: 120px;
+
+  }
+  
+  .falling-carrot {
+    position: absolute;
+    top: -100px;
+    animation: fallAnimation 2s ease-in-out forwards;
+}
+
+@keyframes fallAnimation {
+    0% {
+        top: -100px;
+        opacity: 1;
+    }
+    100% {
+        top: 100vh;
+        opacity: 0;
+    }
+}
+
+
 .wrap{ 
     flex:1;
     display: flex;
@@ -856,7 +882,7 @@ h4{
     .top-plaid img{width: 100%;}
     
     
-    .bottom-box{
+    .mobile-bottom-box{
         width: 100%;
         bottom: 0;
         background-color: #B30101;

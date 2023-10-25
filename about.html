@@ -13,7 +13,11 @@
     </style>
     </head>
     <body>
+
+
 <div class="wrap">
+
+
 
 <!-- rwd手機menu切換 -->
     <input type="checkbox" name="" id="menu-switch"> 
@@ -76,7 +80,7 @@
                     </div>
                 </div>
 
-            <div class="bottom-box">
+            <div class="mobile-bottom-box">
 
                 <div class="top-icon">
                     <div class="mobile-log-in">
@@ -182,6 +186,20 @@
         </div>
 
     </header>
+
+        <!-- 轉場動畫 -->
+<div class="carrot-container"  id="carrot-container"></div>
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot" style="animation-delay: 0.5s;">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot"  style="animation-delay: 1s;">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot"  style="animation-delay: 1.5s;">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">    
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">
+</div>
 
     
     <div class="container">
@@ -390,6 +408,39 @@
 </body>
 <script src="./js/jquery-3.7.0.js"></script>
 
+<!-- 轉場動畫 -->
+
+<script>
+
+    const container = document.getElementById('carrot-container');
+    
+    
+    const numberOfCarrots = 50; //掉落的carrot數量
+    for (let i = 0; i < numberOfCarrots; i++) {
+      const carrot = document.createElement('img');
+      carrot.src = 'image/carrot.png';
+      carrot.alt = 'Carrot';
+      carrot.classList.add('falling-carrot');
+      
+      // 隨機設置carrot的位置
+      carrot.style.left = Math.random() * window.innerWidth + 'px';
+    
+    
+      carrot.style.animationDelay = Math.random() * 3 + 's';
+    
+      container.appendChild(carrot);
+    }
+    
+    </script> 
+    
+    
+    <script>
+    
+    //懸浮視窗
+    document.querySelector('.popup-icon').addEventListener('click', function() {
+      showModal();
+    });
+    </script>
 
 <script>
     //side-menu
@@ -402,7 +453,7 @@
       // 切换菜單
       function toggleMenu() {
         if (menuVisible) {
-          // 隐藏菜单，显示原按钮
+          // 隐藏菜單，顯示原按钮
           $menuContainer.animate({ left: "-500px" }, 300, function() {
             $menuButton.show();
             $closeButton.hide();

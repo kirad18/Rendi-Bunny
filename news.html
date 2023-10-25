@@ -5,495 +5,397 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/item.css">
+    <link rel="stylesheet" type="text/css" href="css/news.css">
     <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
-
-html{ background-color: #E4D7CA;}
-
-body {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    text-decoration: none; 
-    background-color: #1c1c1c;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-}
- @-webkit-keyframes color-change-2x {
-  0%{
-    background: #1c1c1c;
-  }
-50%{
-    background: #27183F;
-}
- 
-  100% {
-    background: #5E1D53;
-  }
-}
-@keyframes color-change-2x {
-    0%{
-    background: #3B3A3A;
-  }
-
-  100% {
-    background: #27183F;
-  }
-} 
-ul li a { text-decoration: none; }
-a { text-decoration:none;}
-/* .header{
-    width: 100%;
-    position: absolute;
-}  */
-.container{
-    min-height: 100%;
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    margin: auto;
-    position: relative;
-    z-index: 1;
-}
-
-.box-top-text{
-    width: 100%;
-    /* background-color: black; */
-    padding-top: 60px;
-} 
-.box-top-text a{
-    font-family: 'Paytone One', sans-serif;
-    /* background-color: #8393e4; */
-    text-decoration: none;
-    color: #F2E8D9;
-    font-size: 6em;
-    animation: LetterColor 3s linear infinite;
-}
- @keyframes LetterColor {
-    0% {
-        color: #fff;
-        text-shadow: 
-        0 0 10px #00b3ff,
-        0 0 20px #00b3ff,
-        0 0 40px #00b3ff,
-        0 0 80px #00b3ff,
-        0 0 120px #00b3ff,
-        0 0 200px #00b3ff,
-        0 0 300px #00b3ff,
-        0 0 400px #00b3ff;
-        filter: blur(2px) hue-rotate(0deg);
-    }
-    70% {
-        color: #fff;
-        text-shadow: 
-        0 0 10px #00b3ff,
-        0 0 20px #00b3ff,
-        0 0 40px #00b3ff,
-        0 0 80px #00b3ff,
-        0 0 120px #00b3ff,
-        0 0 200px #00b3ff;
-        filter: blur(2px) hue-rotate(360deg);
-    }
-    100% {
-        color: transparent;
-        text-shadow: none;
-        filter: blur(2px) hue-rotate(0deg);
-    }
-}
-
-.neon{
-    position: relative;
-}
-.neon img{
-    width: 65%;
-    vertical-align: bottom;
-    filter: brightness(150%) saturate(250%) hue-rotate(180deg);
-    animation: neonAnimation 1s infinite alternate;
-  
-}
-.box-middel{
-    width: 100%;
-    display: block;
-    transform: translateY(-100px); 
-    filter: brightness(150%) saturate(250%) hue-rotate(180deg);
-    animation: neonAnimation2 1s infinite alternate;
-}
-.box-middel img{
-    width: 30%;
-}
-@keyframes neonAnimation {
-  from {
-    filter: brightness(80%) saturate(50%) hue-rotate(180deg);
-  }
-  to {
-    filter: brightness(120%) saturate(150%) hue-rotate(360deg);
-  }
-}
-@keyframes neonAnimation2 {
-  from {
-    filter: brightness(60px) saturate(30%) hue-rotate(9deg);
-  }
-  to {
-    filter: brightness(90%) saturate(100%) hue-rotate(360deg);
-  }
-}
-
-.text-box{
-    width: 655px;
-    height: 300px;
-    position: absolute;
-    transform: translate(300px, 405\px);
-    padding: 0 20px;
-    display: flex;
-    text-decoration: none;
-}
-
-.date a{ color: rgb(27,27,27);font-family: 'Volkhov', serif;}
-.content a{ color: rgb(27,27,27);font-family: 'Volkhov', serif;}
-.read-txt{color: rgb(27,27,27); font-family: 'Volkhov', serif;}
-.date, li{
-    margin-bottom: 35px;
-    margin-right: 40px;
-}
-.read-outside{margin-top: -9px;}
-.read-box{
-    width: 100px;
-    height: 25px;
-    border: 1px solid rgb(27,27,27);
-    padding: 2px 0;
-}
-.neon-box{
-    display: block;
-    width: 100%;
-    position: relative;
-    transform: translateY(-150px);
-}
-
-.line{
-    display: flex;
-    flex-direction: column;
-    transform: translate(280px, 414px);
-    position: absolute;
-    z-index: 1;
-}
-
-.line-first{
-    width: 640px;
-    height: 1px;
-    border: 1px solid rgb(27,27,27);
-    margin-bottom: 49px;
-}
-
-.line-sec{
-    width: 640px;
-    height: 1px;
-    border: 1px solid rgb(27,27,27);
-    margin-bottom: 51px;
-}
-
-.line-third{
-    width: 640px;
-    height: 1px;
-    border: 1px solid rgb(27,27,27);
-    margin-bottom: 48px;
-}
-
-.line-fourth{
-    width: 640px;
-    height: 1px;
-    border: 1px solid rgb(27,27,27);
-}
-
-.inside-one{ margin-bottom: 26px;}
-.inside-two{ margin-bottom: 26px;}
-.inside-three{ margin-bottom: 24px;}
-.inside-four{ margin-bottom: 20px;}
-
-
-
-.circle-box{ 
-    position: absolute;
-    display: flex;
-    right: 10px;  
-    transform: translateY(60px);
-} 
-.left-one{
-    width: 300px;
-    height: 100px;
-    transform: translate(-5px,-120px);
-    border-radius: 50%;
-    background-color: #3B3A3A;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-}
-.left-two{
-    width: 100px;
-    height: 100px;
-    transform: translate(-25px, -120px);
-    border-radius: 55%;
-    background-color: #3B3A3A;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-}
-.left-three{
-    width: 300px;
-    height: 100px;
-    transform: translate(-25px,-120px);
-    border-radius: 50%;
-    background-color: #3B3A3A;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-}
-.left-four{
-    width: 100px;
-    height: 100px;
-    transform: translate(-60px,-140px);
-    border-radius: 60%;
-    background-color: #3B3A3A;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-}
-.left-five{
-    width: 50px;
-    height: 50px;
-    transform: translate(-50px,-80px);
-    border-radius: 45%;
-    background-color: #3B3A3A;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-} 
- .left-six{
-    width: 640px;
-    height: 40px;
-    transform: translate(-70px,-70px);
-    border-radius: 40%;
-    background-color: #3B3A3A;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-} 
-.left-seven{
-    width: 50px;
-    height: 50px;
-    transform: translate(-88px,-80px);
-    border-radius: 45%;
-    background-color: #3B3A3A;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-} 
-.left-eight{
-    width: 240px;
-    height: 40px;
-    transform: translate(-90px,-80px);
-    border-radius: 45%;
-    background-color: #3B3A3A;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-} 
-.left-nine{
-    width: 50px;
-    height: 50px;
-    border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
-    transform: rotate(-45deg);
-    margin-top: -60px;
-    background-color: #3B3A3A;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-}   
-.left-ten{
-    width: 150px;
-    height: 80px;
-    transform: translate(-3px,-120px);
-    border-radius: 50%;
-    background-color: #3B3A3A;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-}   
-
-.space{
-    width: 100%;
-    padding-bottom: 200px;
-    background-color: #F2E8D9;
-} 
-
-.footer {
-  position: relative;
-  z-index: 0;
-}
-
-
-
     </style>
-</head>
-<body>
+    </head>
+    <body>
+
+<!-- 轉場動畫 -->
+<div class="carrot-container"  id="carrot-container"></div>
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot" style="animation-delay: 0.5s;">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot"  style="animation-delay: 1s;">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot"  style="animation-delay: 1.5s;">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">    
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">
+<img src="image/carrot.png" alt="Carrot" class="falling-carrot">
+</div>
+
     
 <div class="wrap">
 
+    <!-- rwd手機menu切換 -->
+    <input type="checkbox" name="" id="menu-switch"> 
+    <header class="main-header">
+          
+        <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <nav class="main-nav">
+                <img class="top-plaid" src="image/red plaid.svg" alt="plaid">
+            <div class="menu-box">
+            <div class="menu-title">
+                <a href="guide-page.html" >
+                    <img src="image/mobile-title.svg" alt="RENDI BUNNY"></a></div> </div>
+
+        <div class="menu-outside">
+            <div class="menu-inside">
+                <div class="menu">MENU</div>
+                <div class="period">................................</div>
+                <div class="about">
+                    <a href="about.html">
+                        A&nbsp;B&nbsp;O&nbsp;U&nbsp;T&nbsp; 
+                        <div class="about-price">$50</div></a>
+                    </div>
+                 <div class="news">
+                    <a href="news.html">
+                        N&nbsp;E&nbsp;W&nbsp;S&nbsp; 
+                    <div class="news-price">$40</div></a>
+                    </div>
+                <div class="member">
+                    <a href="member.html">
+                        M&nbsp;E&nbsp;M&nbsp;B&nbsp;E&nbsp;R&nbsp;
+                        <div class="member-price">$20</div></a>
+                    </div>
+                <div class="gallery">
+                    <a href="gallery.html">
+                        G&nbsp;A&nbsp;L&nbsp;L&nbsp;E&nbsp;R&nbsp;Y&nbsp;
+                        <div class="gallery-price">$25</div></a>
+                    </div>
+                <div class="product">
+                    <a href="product.html">
+                        P&nbsp;R&nbsp;O&nbsp;D&nbsp;U&nbsp;C&nbsp;T&nbsp;
+                        <div class="product-price">$45</div></a>
+                </div>
+
+                <div class="others">
+                        <a class="mobile-finder" href="gallery.html">FINDER</a>
+                        <a class="mobile-contact" href="gallery.html">CONTACT</a>
+                </div>
+                <div class="others-sec">
+                        <a class="mobile-login" href="gallery.html">LOGIN</a>
+                        <a class="mobile-faq" href="gallery.html">FAQ</a>
+                </div>
+
+                    </div>
+                </div>
+
+            <div class="mobile-bottom-box">
+
+                <div class="top-icon">
+                    <div class="mobile-log-in">
+                        <a href="menu.html" ><img src="image/log-in_mobile_menu.svg" alt="登入"></a></div>
+                    <div class="mobile-cart">
+                        <a href="menu.html" ><img src="image/cart_mobile_menu.svg" alt="購物車"></a></div>
+                </div>  
+                <div class="bottom-plaid">
+                    <img src="image/red plaid.svg" alt="plaid">
+            </div>
+            </div>             
+        </nav>
+
+
+        
+        <!-- ------------MENU列------ -->
+
+        <div id="menu-container">
+
+            <div class="desk-header">
+              <a  href="#" >
+                <img class="desk-menu-title" src="image/menu-title2.svg" alt="RENDI BUNNY">
+              </a>
+            
+            </div>
+            
+            <div class="desk-container">
+              <img class="axis" src="image/menu-axis.svg" alt="axis">
+              <img class="desk-sticker" src="image/rabbit-icon.svg" alt="desk-sticker">
+            
+            
+              <div class="all-button"> 
+            
+                <div class="button-about" data-button-id="about"> 
+                    <div class="button-top">
+                     <a href="about.html" class="button-txt">ABOUT</a></div>
+                </div> 
+             
+                <div class="button-news" data-button-id="news">
+                    <div class="button-top">
+                        <a href="news.html" class="button-txt">NEWS</a></div>
+                </div> 
+            
+                <div class="button-member"  data-button-id="member">
+                    <div class="button-top">
+                        <a href="member.html" class="button-txt">MEMBER</a></div>
+                </div>
+            
+                <div class="button-gallery"  data-button-id="gallery">
+                    <div class="button-top">
+                        <a href="gallery.html" class="button-txt">GALLERY</a></div>
+                </div>
+            
+                <div class="button-product" data-button-id="product">
+                    <div class="button-top">
+                        <a href="product.html" class="button-txt">PRODUCT</a></div>
+                </div> 
+              </div> 
+            </div>
+            
+            
+            
+            <div class="desk-footer">
+              <div class="finder">
+                <div class="bottom-box"> 
+                    <a href="menu.html" class="txt">FINDER </a></div>
+              </div>
+            
+            
+              <div class="login">
+              <div class="bottom-box"> 
+                  <a href="#" class="txt">LOG-IN </a></div>
+              </div>
+            
+              <div class="contact">
+              <div class="bottom-box">
+                  <a href="#" class="txt">CONTACT </a></div>
+              </div>
+              
+              <div class="faq">
+              <div class="bottom-box">
+                  <a href="#" class="txt">FAQ </a></div>
+              </div>
+            
+              <div class="bottom-icon">
+                  <a href="#"><img class="facebook" src="image/facebook_black.png" alt="fb" ></a> 
+                  <a href="#"><img class="instagram" src="image/instagram_black.png"  alt="ig"></a>
+              </div> 
+            </div>
+            
+
+    <!-- button -->
+        <div class="btn"  id="menu-button">
+            <div class="btn-top">
+                <a href="#" class="btn-txt">MENU</a></div>
+                <div class="btn-back"> </div>
+          </div>
+
+        <div class="close-btn" id="close-button">
+            <div class="close-btn-back"></div>
+            <div class="close-btn-top">
+                <a href="#" class="close-btn-txt">CLOSE</a></div>
+        </div>
+
+    </header>
+    
+    <div class="text-box">
+
+        <div class="newListOutside">
+            <ul class="newsList">
+                <li><a href="news.html">July.22.2023</a></li>
+                <li><a href="news.html">Timetable Of Holiday Selling</a></li>
+                <li><button type="button" class="popup-btn" id="openButton1">
+                    <a href="news.html"><div class="read-txt">READ❥</div></a></button>
+                </li>
+            </ul>
+      
+
+   
+            <ul class="newsList">
+                <li><a href="news.html">July.10.2023</a></li>
+                <li><a href="news.html">New Products Release</a></li>
+                <li><button type="button" class="popup-btn" id="openButton2">
+                    <a href="news.html"><div class="read-txt">READ❥</div></a></button>
+                </li>
+            </ul>
+     
+
+        
+  
+            <ul class="newsList">
+                <li><a href="news.html">Feb. 14.2023</a></li>
+                <li><a href="news.html">Limited Edition Tote Bag Release</a></li>
+                <li><button type="button" class="popup-btn" id="openButton3">
+                    <a href="news.html"><div class="read-txt">READ❥</div></a></button>
+                </li>
+            </ul>
+  
+
+    
+            <ul class="newsList">
+                <li><a href="news.html">Jan. 02..2023</a></li>
+                <li><a href="news.html">Happy New Year Sale</a></li>
+                <li><button type="button" class="popup-btn" id="openButton4">
+                    <a href="news.html"><div class="read-txt">READ❥</div></a></button>
+                </li>
+            </ul>
+        </div>
+    </div> 
+</div>
+    <!-- 霓虹燈 -->
 
     <div class="container">
 
-        <div class="box-top-text">
+        <!-- <div class="box-top-text">
             <a href="guide-page.html">NEWS</a></div>
 
         <div class="neon-box"> 
-            <div class="line">
+            <div class="inside"></div>
+            <div class="neon">
+                <img src=" image/news/news-neon2.svg"></div> -->
+
+            <!-- <div class="line">
                 <div class="line-first"></div>
                 <div class="line-sec"></div>
                 <div class="line-third"></div>
                 <div class="line-fourth"></div>
-            </div>
-            <div class="inside"></div>
-            <div class="neon">
-                <img src=" image/news-neon2.svg"></div>
-        </div>
+            </div> -->
 
-        <div class="text-box">
-            <div class="date">
-                <ul>
-                    <li><a href="news.html">July.22.2023</a><br></li>
-                    <li><a href="news.html">June. 10.2023</a><br></li>
-                    <li><a href="news.html">Feb. 14.2023</a><br></li>
-                    <li><a href="news.html">Jan. 02.2023</a></li>
-                </ul>
-            </div>
+            <main id="top">
 
-        <div class="content">
-                <ul>
-                    <li><a href="news.html">Timetable Of Holiday Selling</a></li>
-                    <li><a href="news.html">New Products Release</a></li>
-                    <li><a href="news.html">Limited Edition Tote Bag Release</a></li>
-                    <li><a href="news.html">Happy New Year Sale</a></li>
-                </ul>
-        </div>
+                <div class="box main-box" style="height: 300px;">
+                    <div class="box-inner">
+                        <div class="box toggler frame">
+                            <div class="screw"></div>
+                            <div class="toggler-inner" data-toggle="top"></div>
+                        </div>
+                    </div>
+                </div>
         
-            <div class="read-outside">
-                <div class="inside-one">
-                <div class="read-box">
-                    <a href="news.html"><div class="read-txt">READ ❥</div></a>
+                <div class="box main-box" style="width: 650px;">
+                    <div class="box-inner">
+        
+                        <div class="box frame">
+                            <h3>"Have you seen them?"</h3>
+                            <p>Tales from others who have wandered the digital backrooms. Share your stories, find clues, and remember - trust no one fully.</p>
+                            <a class="button" href="#">Read</a>
+                            <a class="button alt" href="#">Submit</a>
+                        </div>
+        
+                        <div class="box-wrap" >
+                            <div class="hinge left"></div>
+                            <div id="audio" class="box open-left">
+                            <div class="screw right"></div>
+                            
+                            <h3>Audio Logs</h3>
+                            <p>Hear the whispers and cries from those who've delved too deep. They may offer advice, or they might lead you astray.</p>
+                            <a class="button" href="#" data-toggle="audio">Listen</a>
+                        </div>
+                        </div>
+        
+                    </div>
+                </div>
+        
+            </main>
+            
+
+            <!-- 點擊read more的彈跳視窗 -->
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="closeBtn" id="closeButton1">X</div>
+                    <div class="contentBox">
+                    <div class="pic">
+                        <img src="image/news/ghost_4.png" class="pic1">
+                    </div>
+                    
+                    <div class="detail">
+                        <h1>Timetable Of Holiday Selling</h1>
+                        <h2>Inaugural Holiday Sales Schedule</h2><br>
+                        <p>‧October.15 - 31, 2023:Halloween Spooktacular Sale
+                            Get into the Halloween spirit with our special discounts on costumes, decorations.</p><br>
+                        <p>‧November 1 - 30, 2023: Pre-Black Friday Blowout
+                            Unbelievable deals to kick off the holiday.</p><br>    
+                        <p>‧November25, 2023: Black Friday Bonanza
+                            The most anticipated shopping day of the year with massive discounts and doorbusters.</p><br> 
+                        <p>‧November25, 2023: Black Friday Bonanza
+                            The most anticipated shopping day of the year with massive discounts and doorbusters.</p><br> 
+                    </div>
                 </div>
             </div>
-
-            <div class="inside-two">
-                <div class="read-box">
-                    <a href="news.html"><div class="read-txt">READ ❥</div></a>
-                </div>
-            </div>
-
-            <div class="inside-three">
-                <div class="read-box">
-                    <a href="news.html"> <div class="read-txt">READ ❥</div></a>
-                </div>
+        </div>
+            
                 
-            </div>
 
-            <div class="inside-four">
-                <div class="read-box">
-                    <a href="news.html"><div class="read-txt">READ ❥</div></a>
-                </div>
-            </div>
+        
 
+            
             <div class="more-box">
                 <a href="news.html"><div class="read-txt">MORE ❥</div></a>
             </div>
         </div> 
     </div>
 
-    <div class="box-middel">
-        <img src=" image/news-arrow.svg"></div>
+    <!-- <div class="box-middel">
+        <img src=" image/news/news-arrow.svg"></div> -->
            
-        <div class="btn">
-            <div class="btn-top">
-                <a href="menu.html" class="btn-txt">MENU</a></div>
-             <div class="btn-back"> </div>
-    </div>
-
    
     </div> 
  
 
-<div class="circle-box">
-    <div class="left-one"></div>
-    <div class="left-two"></div>
-    <div class="left-three"></div>
-    <div class="left-four"></div>
-    <div class="left-five"></div>
-    <div class="left-six"></div>
-    <div class="left-seven"></div>
-    <div class="left-eight"></div>
-    <div class="left-nine"></div>
-    <div class="left-ten"></div>
-</div> 
-<div class="space"></div>
-   
-<div class="footer">
-    <div class="footer-top">
-
-        <section>
-            <div class="scroll">
-             <div class="text">
-                CONTACT US ✉ CONTACT US ✉ CONTACT US ✉ CONTACT US ✉
-             </div>
-             <div class="text">
-                CONTACT US ✉ CONTACT US ✉ CONTACT US ✉ CONTACT US ✉
-             </div>
-           </div>
-           
-         </section>
-
-
-    </div>
-
-    <div class="footer-main">
-        <div class="main-box">
-        <div class="footer-left">
-          <div class="contact-text">STAY<br>TUNED</div>
-            <div class="contacts-box">
-                <div class="phone">
-                    <img src="image/about-phone.svg" alt="phone"></div>
-            </div>
-        </div>
-        </div>
-
-        <div class="footer-right">
-
-            <div class="scbcribe-box">
-                <div class="top-txt">
-                <h2>SCBSCRIBE</h2>
-                <h3>Don't pass notes — subscribe to our email list.</h3></div>
-                <form>
-                    <input type="text" name=""  size="40" placeholder="Email address" onfocus="this.placeholder=''" onblur="this.placeholder='Email address'"><br>
-                    <input type="submit" value="SEND">
-                </form>
-                
-                </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-
-        <div class="bottom-btn">
-
-            <div class="payment">
-                <div class="bottom-box">
-                    <a href="about.html" class="txt">PAYMENT&SHIPPING </a></div>
-            </div>
-
-            <div class="contact">
-                <div class="bottom-box">
-                    <a href="about.html" class="txt">CONTACT </a></div>
-                </div>
-
-            <div class="faq">
-                <div class="bottom-box">
-                    <a href="about.html" class="txt">FAQ </a></div>
-            </div>
-            <div class="icon">
-                <a class="fb "href="about.html"><img src="image/facebook icon.svg" alt="fb"></a>
-                <a class="ig "href="about.html"><img src="image/instagram icon.svg" alt="ig"></a></div>
-        </div> 
+    <!-- <div class="circle-box">
+        <div class="left-one"></div>
+        <div class="left-two"></div>
+        <div class="left-three"></div>
+        <div class="left-four"></div>
+        <div class="left-five"></div>
+        <div class="left-six"></div>
+        <div class="left-seven"></div>
+        <div class="left-eight"></div>
+        <div class="left-nine"></div>
+        <div class="left-ten"></div>
     </div> 
+    <div class="space"></div> -->
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-top">
+            <section>
+                <div class="scroll">
+                <div class="text">CONTACT US ✉ CONTACT US ✉ CONTACT US ✉ CONTACT US ✉ CONTACT US ✉</div>
+                <div class="text">CONTACT US ✉ CONTACT US ✉ CONTACT US ✉ CONTACT US ✉ CONTACT US ✉</div>
+                </div>
+            </section>
+        </div>
+        <div class="footer-main">
+            <div class="footer-left">
+                <img class="contact-text" src="image/staytuned.svg" alt="title">
+                <img id="animated-image" src="image/phone2.svg" alt="phone">
+            </div>
+
+            <div class="footer-right">
+                <div class="scbcribe">
+                    <div class="scb-text">SCBSCRIBE <br></div>
+                    <p>Don't pass notes — subscribe to our email list.</p>
+                    <form>
+                        <input type="text" name=""  size="40" placeholder="Email address" 
+                        onfocus="this.placeholder=''" placeholder='Email address'><br>
+                        <input type="submit" value="SEND">
+                    </form>
+                </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="bottom-text">
+                <a class= bottom-payment" href="about.html">PAYMENT&SHIPPING</a>
+                <a class="bottom-contact" href="about.html">CONTACT</a>
+                <a class="faq "href="about.html">FAQ</a>
+                    <div class="icon">
+                        <a class="fb "href="about.html"><img src="image/facebook icon.svg" alt="fb"></a>
+                        <a class="ig "href="about.html"><img src="image/instagram icon.svg" alt="ig"></a>
+                    </div>
+            </div>
+        </div>
+
  
 </div> 
 <!-- -----------volkhov font------------------ -->
@@ -511,9 +413,176 @@ a { text-decoration:none;}
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 
-
-
-
 </body>
 <script src="./js/jquery-3.7.0.js"></script>
+
+<!-- 轉場動畫 -->
+
+<script>
+
+    const container = document.getElementById('carrot-container');
+    
+    
+    const numberOfCarrots = 50; //掉落的carrot數量
+    for (let i = 0; i < numberOfCarrots; i++) {
+      const carrot = document.createElement('img');
+      carrot.src = 'image/carrot.png';
+      carrot.alt = 'Carrot';
+      carrot.classList.add('falling-carrot');
+      
+      // 隨機設置carrot的位置
+      carrot.style.left = Math.random() * window.innerWidth + 'px';
+    
+    
+      carrot.style.animationDelay = Math.random() * 3 + 's';
+    
+      container.appendChild(carrot);
+    }
+    
+    </script> 
+    
+    
+    <script>
+    
+    //懸浮視窗
+    document.querySelector('.popup-icon').addEventListener('click', function() {
+      showModal();
+    });
+    </script>
+
+<script>
+    //side-menu
+    $(document).ready(function() {
+      var menuVisible = false;
+      var $menuContainer = $("#menu-container");
+      var $menuButton = $("#menu-button");
+      var $closeButton = $("#close-button");
+      
+      // 切换菜單
+      function toggleMenu() {
+        if (menuVisible) {
+          // 隐藏菜單，顯示原按钮
+          $menuContainer.animate({ left: "-500px" }, 300, function() {
+            $menuButton.show();
+            $closeButton.hide();
+          });
+        } else {
+          // 隐藏原按钮，顯示關閉按钮，顯示menu
+          $menuButton.hide();
+          $closeButton.show();
+          $menuContainer.animate({ left: "0" }, 300);
+        }
+        menuVisible = !menuVisible;
+      }
+      
+      // 绑定按钮點擊事件
+      $menuButton.click(toggleMenu);
+      $closeButton.click(toggleMenu);
+      
+      // 設置關閉按钮位置為原按钮位置
+      $closeButton.css({
+        top: $menuButton.position().top,
+        left: $menuButton.position().left
+      });
+    });
+
+     //按鈕會跟著移動
+     $(document).ready(function() {
+
+    var $sticker = $(".desk-sticker");
+
+    //hover
+    $(".button-about, .button-news, .button-member, .button-gallery, .button-product").hover(function() {
+
+    var buttonId = $(this).data("button-id");
+    var buttonRect = $(this)[0].getBoundingClientRect();
+    var stickerY = buttonRect.top -155; 
+    $sticker.animate({ top: stickerY + "px" }, 100);
+    });
+
+
+    //on click
+    $(".button-about, .button-news, .button-member, .button-gallery, .button-product").click(function() {
+
+    var buttonId = $(this).data("button-id");
+    var buttonRect = $(this)[0].getBoundingClientRect();
+    var stickerY = buttonRect.top -155;  
+
+    $sticker.animate({ top: stickerY + "px" }, 50);
+    });
+});
+
+    //FOOTER
+    $(document).ready(function() {
+    
+    var $image = $("#animated-image");
+    
+    function bounceImage() {
+        $image.animate({
+        top: "+=20px" 
+        }, 500, "linear", function() {
+        $image.animate({
+            top: "-=20px"
+        }, 500, "linear", bounceImage); 
+        });
+    }
+    
+    bounceImage();
+    });
+
+
+</script>
+
+<script>
+    //彈跳視窗
+    $(document).ready(function() {
+        // 获取弹窗和关闭按钮的引用
+        var popup = document.getElementById("popup-1");
+        var closeButton = document.getElementById("closeButton1");
+
+        // 打开弹窗
+        $("#openButton1").click(function() {
+            console.log("弹窗按钮被点击");
+            popup.style.display = "block";
+        });
+
+        // 关闭弹窗
+        closeButton.addEventListener("click", function() {
+            popup.style.display = "none";
+        });
+    });
+
+    //按鈕切換
+    document.addEventListener('DOMContentLoaded', () => {
+    function toggle() {
+        // Look for any element with the 'data-toggle' attribute
+        const elements = document.querySelectorAll('[data-toggle]');
+        
+        elements.forEach((element) => {
+        element.addEventListener('click', (event) => {
+            event.preventDefault();
+            
+            const targetID = element.getAttribute('data-toggle');
+            const targetElement = document.getElementById(targetID);
+            
+            // Toggle the class 'toggled' on the targeted element
+            targetElement.classList.toggle('toggled');
+            
+            // Toggle the class 'active' on the clicked element
+            element.classList.toggle('active');
+        });
+        });
+        
+
+        
+    }
+    toggle();
+});
+
+
+
+
+
+</script>
+
 </html>
